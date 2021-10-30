@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="484.0" prefWidth="458.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="views.AnalyseController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="1.0" prefHeight="494.0" prefWidth="463.0" style="-fx-background-color: #E6EFF0;">
+         <children>
+            <ComboBox layoutX="74.0" layoutY="88.0" prefHeight="25.0" prefWidth="109.0" />
+            <Label layoutX="6.0" layoutY="90.0" prefHeight="17.0" prefWidth="50.0" text="Analyse" />
+            <TextField layoutX="73.0" layoutY="46.0" prefHeight="25.0" prefWidth="109.0" promptText="entrez matricule" />
+            <Label layoutX="5.0" layoutY="48.0" text="Matricule" />
+            <DatePicker layoutX="309.0" layoutY="87.0" prefHeight="25.0" prefWidth="130.0" />
+            <Label layoutX="250.0" layoutY="90.0" text="Date" />
+            <Text fill="#f50909" layoutX="181.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendez non disponible" />
+            <Button layoutX="200.0" layoutY="171.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #FC0505;" text="Appliquez" />
+            <TableView layoutX="4.0" layoutY="242.0" prefHeight="247.0" prefWidth="454.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Nom" />
+                  <TableColumn prefWidth="75.0" style="background-color: #2F2E5B;" text="Prenoms" />
+                  <TableColumn prefWidth="75.0" text="Age" />
+                  <TableColumn prefWidth="75.0" text="Analyse" />
+                  <TableColumn prefWidth="75.0" text="Date" />
+                  <TableColumn prefWidth="75.0" text="Statut" />
+               </columns>
+            </TableView>
+            <Text layoutX="207.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analyse" wrappingWidth="49.999995708465576" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
